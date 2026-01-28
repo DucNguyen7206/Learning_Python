@@ -28,6 +28,7 @@ for test in range(int(input())):
 """
 
 # Using Boyer - Moore Majority Voting Algorithm (more optimal)
+# https://www.geeksforgeeks.org/theory-of-computation/boyer-moore-majority-voting-algorithm/
 for test in range(int(input())):
     n = int(input())
     a = list(map(int, input().split()))
