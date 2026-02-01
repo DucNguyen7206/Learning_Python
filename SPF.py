@@ -1,3 +1,5 @@
+# Smallest Prime Factor
+
 def sieve_spf(n):
     p = list(range(n + 1))
     p[0] = p[1] = 0
