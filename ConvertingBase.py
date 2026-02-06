@@ -29,3 +29,26 @@ for _ in range(test):
     b = int(input())
     x = input() # binary string
     print(convert(b, x))
+    
+    
+# The version below can handle bases from 2 to 36
+"""
+digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def convert(n, b):
+    if n == 0:
+        return 0
+    
+    res = []
+    while n > 0:
+        res.append(digits[n % b])
+        n //= b
+    res = reversed(res)
+    return "".join(res)
+
+def main():
+    for test in range(int(input())):
+        n, b = map(int, input().split())
+        print(convert(n, b))
+
+main()
+"""
