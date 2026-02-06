@@ -32,6 +32,7 @@ for _ in range(test):
     
     
 # The version below can handle bases from 2 to 36
+# It also avoids hard-code like the above one
 """
 digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def convert(n, b):
